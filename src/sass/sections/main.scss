@@ -1,0 +1,8 @@
+.content {
+  padding: rem(90) 0 rem(50);
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(90) rem(0) 0 rem(20);
+  }
+}

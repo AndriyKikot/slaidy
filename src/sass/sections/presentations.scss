@@ -77,9 +77,13 @@
   margin-bottom: rem(20);
   margin-right: auto;
   margin-left: auto;
+}
+
+.presentation__item--large {
   width: rem(400);
   @include for-size(tablet) {
     width: 48%;
+    margin-right: 0;
   }
   @include for-size(desktop) {
     width: 24%;
@@ -95,6 +99,8 @@
   width: 100%;
   height: rem(270);
   margin-bottom: rem(10);
+  object-fit: cover;
+  object-position: center;
   @include for-size(desktop-xl) {
     width: 100%;
   }

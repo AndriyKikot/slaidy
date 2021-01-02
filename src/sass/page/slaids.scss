@@ -1,0 +1,135 @@
+.slaids {
+  background-color: #f6f6f6;
+  padding: rem(20) rem(20);
+}
+
+.slaids__form {
+  box-shadow: 0px 0px 10px 0px rgba($blue-color, 1);
+  background-color: $white-color;
+  border-radius: 10px;
+  margin-bottom: rem(40);
+  @include for-size(tablet) {
+    margin: 0 auto rem(40);
+  }
+  @include for-size(desktop) {
+    width: 80%;
+    margin: 0 auto rem(50);
+  }
+}
+
+.slaids__title {
+  text-align: center;
+  padding-top: rem(10);
+  margin-bottom: rem(30);
+  color: $tomato-color;
+  @include for-size(tablet) {
+    padding-top: rem(20);
+  }
+}
+
+.slaids__text {
+  padding-left: rem(15);
+  padding-right: rem(15);
+  color: rgba($dark-color, 0.7);
+  font-size: rem(14);
+  line-height: 1.5;
+  margin-bottom: rem(15);
+  margin-left: auto;
+  margin-right: auto;
+  @include for-size(tablet) {
+    width: 80%;
+    font-size: rem(18);
+  }
+}
+
+.soc-icon {
+  width: 100%;
+  text-align: right;
+  padding-bottom: rem(10);
+  padding-right: rem(10);
+  @include for-size(tablet) {
+    padding-right: rem(30);
+  }
+  @include for-size(desktop) {
+    padding-right: rem(100);
+  }
+}
+
+.ya-share2__container_size_m .ya-share2__icon {
+  @include for-size(tablet) {
+    height: 32px !important; /* 24px */
+    width: 32px !important; /* 24px */
+    background-size: 32px 32px !important; /* Увеличиваем кнопки, по-умолчанию: 24px 24px */
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: rem(20);
+}
+
+.pagination__list {
+  display: flex;
+  align-items: center;
+}
+
+.pagination__item:not(:last-of-type) {
+  margin-right: rem(5);
+}
+
+.pagination__icon {
+  width: rem(20);
+  height: rem(20);
+  fill: rgba($dark-color, 0.7);
+}
+
+.pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(24);
+  height: rem(24);
+  font-size: rem(14);
+  text-align: center;
+  color: rgba($dark-color, 0.7);
+  border: 1px solid rgba($dark-color, 0.7);
+  border-radius: 3px;
+  box-shadow: inset 0 5px 10px rgba($dark-color, 0.1),
+    0 2px 5px rgba($dark-color, 0.5);
+
+  @include for-size(tablet) {
+    width: rem(30);
+    height: rem(30);
+    font-size: rem(16);
+  }
+}
+
+.pagination__link:hover {
+  background-color: rgba($blue-color, 1);
+  transition: 0.2s;
+  color: $white-color;
+  & .pagination__icon {
+    fill: $white-color;
+    transition: 0.2s;
+  }
+}
+
+.presentation__item--small {
+  width: rem(280);
+  @include for-size(tablet) {
+    width: 32%;
+  }
+  @include for-size(desktop) {
+    width: 19.5%;
+  }
+}
+
+.pagination__link--active {
+  background-color: rgba($blue-color, 1);
+  color: $white-color;
+  & .pagination__icon {
+    fill: $white-color;
+    transition: 0.2s;
+  }
+}

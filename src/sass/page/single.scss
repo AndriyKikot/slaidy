@@ -1,11 +1,14 @@
 .single {
-  flex: 0 0 85%;
+  flex: 0 0 78%;
   background-color: #f6f6f6;
   min-width: 0;
+  @include for-size(desktop) {
+    flex: 0 0 85%;
+  }
 }
 
 .single__container {
-  padding: rem(10) rem(20);
+  padding: rem(10) rem(30);
 }
 
 .single__header {
@@ -25,7 +28,7 @@
 }
 
 .image-slider__box {
-  margin-bottom: rem(10);
+  margin-bottom: rem(20);
 }
 
 .image-slider__wrapper {
@@ -100,7 +103,7 @@
 .slider__button--next {
   right: 4%;
   @include for-size(tablet) {
-    right: -2%;
+    right: 5%;
   }
   @include for-size(desktop) {
     right: 10%;
@@ -117,7 +120,7 @@
   content: '';
   width: 80%;
   height: rem(1);
-  background-color: rgba($dark-light-color, 1);
+  background-color: rgba($dark-light-color, 0.4);
   color: $white-color;
   margin-bottom: rem(30);
 }
@@ -150,5 +153,99 @@
     font-size: rem(14);
     width: rem(24);
     height: rem(24);
+  }
+}
+
+.single__content {
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(30);
+  }
+}
+
+.slide__box {
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba($blue-color, 0.7);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: rem(30);
+  }
+}
+
+.slaids-description {
+  flex: 0 0 60%;
+  border: 1px solid rgba($dark-color, 0.7);
+  justify-content: center;
+  background-color: $white-color;
+  border-radius: 10px;
+  margin-bottom: rem(20);
+  @include for-size(desktop) {
+    margin-bottom: rem(0);
+  }
+}
+
+.other-presentation {
+  flex: 0 0 38%;
+  border: 1px solid rgba($dark-color, 0.7);
+  border-radius: 10px;
+  background-color: $white-color;
+}
+
+.single__content-title {
+  text-align: center;
+  padding-top: rem(10);
+  color: rgba($dark-color, 0.7);
+  margin-bottom: rem(20);
+}
+
+.slide__number {
+  text-align: center;
+  background-color: $blue-color;
+  margin: 0 auto;
+  width: rem(100);
+  border-radius: 4px;
+  color: $white-color;
+  font-weight: 500;
+  padding: rem(5) rem(10);
+  margin-bottom: rem(10);
+}
+
+.description__box {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto rem(20);
+
+  @include for-size(tablet) {
+    width: 45%;
+    margin-bottom: rem(0);
+  }
+}
+
+.slide__description-title {
+  margin-bottom: rem(5);
+  font-size: rem(14);
+}
+
+.slide__img {
+  margin-bottom: rem(10);
+  @include for-size(tablet) {
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: rem(0);
+  }
+}
+
+.slide__description {
+  font-size: rem(10);
+  line-height: 1.5;
+  @include for-size(tablet) {
+    font-size: rem(12);
+    letter-spacing: -1px;
   }
 }

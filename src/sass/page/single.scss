@@ -1,0 +1,154 @@
+.single {
+  flex: 0 0 85%;
+  background-color: #f6f6f6;
+  min-width: 0;
+}
+
+.single__container {
+  padding: rem(10) rem(20);
+}
+
+.single__header {
+  margin-bottom: rem(20);
+}
+
+.single__title {
+  text-align: center;
+  font-size: rem(24);
+  margin-bottom: rem(10);
+}
+
+.single__category {
+  font-size: rem(16);
+  color: rgba($dark-color, 0.7);
+  padding-left: rem(20);
+}
+
+.image-slider__box {
+  margin-bottom: rem(10);
+}
+
+.image-slider__wrapper {
+  position: relative;
+}
+
+.image-slider__multiplay {
+  width: 80%;
+  margin: 0 auto;
+  @include for-size(desktop) {
+    width: 70%;
+  }
+}
+
+.image-slider__pagination {
+  width: 100%;
+  max-height: rem(500);
+  @include for-size(tablet) {
+    width: 70%;
+  }
+}
+
+.image-slider__image::after {
+  display: flex;
+  content: '1';
+  width: rem(24);
+  height: rem(24);
+  background-color: rgba($dark-light-color, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  color: $white-color;
+  font-size: rem(14);
+}
+
+.image-slider__image img {
+  margin: 0 auto;
+  width: 100%;
+  height: rem(150);
+}
+
+.image-slider__pagination-img {
+  height: rem(500);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $red-color;
+  font-weight: 900;
+  position: absolute;
+  top: 30%;
+  @include for-size(tablet) {
+    top: 30%;
+  }
+  @include for-size(desktop) {
+    top: 33%;
+  }
+}
+
+.slider__button--prev {
+  left: 4%;
+  @include for-size(tablet) {
+    left: 29%;
+  }
+  @include for-size(desktop) {
+    left: 26.5%;
+  }
+}
+
+.slider__button--next {
+  right: 4%;
+  @include for-size(tablet) {
+    right: -2%;
+  }
+  @include for-size(desktop) {
+    right: 10%;
+  }
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line::after {
+  content: '';
+  width: 80%;
+  height: rem(1);
+  background-color: rgba($dark-light-color, 1);
+  color: $white-color;
+  margin-bottom: rem(30);
+}
+
+.swiper-pagination {
+  top: rem(10);
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @include for-size(tablet) {
+    width: 40%;
+  }
+}
+
+.swiper-pagination-bullet {
+  display: block;
+  width: rem(20);
+  height: rem(20);
+  margin-right: rem(5);
+  background-color: rgba($red-color, 1);
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(10);
+  @include for-size(tablet) {
+    font-size: rem(14);
+    width: rem(24);
+    height: rem(24);
+  }
+}

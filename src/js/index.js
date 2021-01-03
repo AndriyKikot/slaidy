@@ -17,3 +17,4 @@ canselArrowBtn.onclick = () => {
 menuBtn.onclick = () => {
     modalPresentation.classList.toggle('active');
 };
+

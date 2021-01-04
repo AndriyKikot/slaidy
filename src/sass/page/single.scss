@@ -83,7 +83,7 @@
   position: absolute;
   top: 26%;
   @include for-size(tablet) {
-    top: 47%;
+    top: 50%;
   }
   @include for-size(desktop) {
     top: 26%;

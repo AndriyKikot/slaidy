@@ -80,35 +80,35 @@
 .swiper-button-next {
   color: $red-color;
   font-weight: 900;
-  position: absolute;
-  top: 30%;
-  @include for-size(tablet) {
-    top: 30%;
-  }
-  @include for-size(desktop) {
-    top: 26%;
-  }
+  // position: absolute;
+  // top: 30%;
+  // @include for-size(tablet) {
+  //   top: 30%;
+  // }
+  // @include for-size(desktop) {
+  //   top: 26%;
+  // }
 }
 
-.slider__button--prev {
-  left: 4%;
-  @include for-size(tablet) {
-    left: 29%;
-  }
-  @include for-size(desktop) {
-    left: 26.5%;
-  }
-}
+// .slider__button--prev {
+//   left: 4%;
+//   @include for-size(tablet) {
+//     left: 29%;
+//   }
+//   @include for-size(desktop) {
+//     left: 26.5%;
+//   }
+// }
 
-.slider__button--next {
-  right: 4%;
-  @include for-size(tablet) {
-    right: 5%;
-  }
-  @include for-size(desktop) {
-    right: 10%;
-  }
-}
+// .slider__button--next {
+//   right: 4%;
+//   @include for-size(tablet) {
+//     right: 5%;
+//   }
+//   @include for-size(desktop) {
+//     right: 10%;
+//   }
+// }
 
 .line {
   display: flex;

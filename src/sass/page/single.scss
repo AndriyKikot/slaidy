@@ -81,12 +81,12 @@
   color: $red-color;
   font-weight: 900;
   position: absolute;
-  top: 30%;
+  top: 26%;
   @include for-size(tablet) {
-    top: 48%;
+    top: 47%;
   }
   @include for-size(desktop) {
-    top: 33%;
+    top: 26%;
   }
 }
 

@@ -2,12 +2,18 @@
   background-color: #f6f6f6;
 
   @include for-size(tablet) {
-    padding-left: rem(20);
     padding-top: rem(20);
     flex: 0 0 78%;
   }
   @include for-size(desktop) {
-    flex: 0 0 85%;
+    flex: 0 0 83%;
+  }
+}
+
+.presentations__content-list {
+  padding-top: rem(20);
+  @include for-size(tablet) {
+    padding-top: rem(0);
   }
 }
 

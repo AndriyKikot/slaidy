@@ -97,7 +97,7 @@
 }
 
 .presentation__item:hover {
-  box-shadow: 0px 0px 10px 0px rgba($blue-color, 1);
+  box-shadow: 0px 0px 10px 0px rgba($red-color, 1);
   transition: 0.2s;
 }
 
@@ -113,7 +113,7 @@
 }
 
 .presentation__title {
-  color: $blue-color;
+  color: $red-color;
   margin-left: rem(10);
   margin-bottom: rem(15);
 }
@@ -171,7 +171,7 @@
 .btn {
   cursor: pointer;
   border: none;
-  background-color: rgba($blue-color, 1);
+  background-color: rgba($red-color, 1);
   color: $white-color;
   padding: rem(5) rem(8);
   font-size: rem(12);
@@ -180,12 +180,12 @@
   border-radius: rem(5);
 
   &:hover {
-    color: rgba($blue-color, 1);
+    color: rgba($red-color, 1);
     background-color: #fff;
     transition: 0.3s;
 
     .button__icon {
-      fill: rgba($blue-color, 1);
+      fill: rgba($red-color, 1);
       transition: 0.3s;
     }
   }
@@ -204,7 +204,7 @@
   height: rem(70);
   fill: $white-color;
   &:hover {
-    fill: rgba($blue-color, 1);
+    fill: rgba($red-color, 1);
     transition: 0.2s;
     transform: scale(1.05);
   }

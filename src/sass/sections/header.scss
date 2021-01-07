@@ -88,7 +88,7 @@
     }
 
     &:focus {
-      border: 3px solid rgba($blue-color, 0.5);
+      border: 3px solid rgba($red-color, 0.5);
     }
   }
 
@@ -103,7 +103,7 @@
     &:hover {
       opacity: 1;
       transition: 0.2s;
-      background-color: rgba($blue-color, 1);
+      background-color: rgba($red-color, 1);
 
       & .search-form__icon {
         fill: $white-color;

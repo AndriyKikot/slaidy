@@ -4,7 +4,7 @@
 }
 
 .slaids__form {
-  box-shadow: 0px 0px 10px 0px rgba($blue-color, 1);
+  box-shadow: 0px 0px 10px 0px rgba($red-color, 1);
   background-color: $white-color;
   border-radius: 10px;
   margin-bottom: rem(40);
@@ -106,7 +106,7 @@
 }
 
 .pagination__link:hover {
-  background-color: rgba($blue-color, 1);
+  background-color: rgba($red-color, 1);
   transition: 0.2s;
   color: $white-color;
   & .pagination__icon {
@@ -126,7 +126,7 @@
 }
 
 .pagination__link--active {
-  background-color: rgba($blue-color, 1);
+  background-color: rgba($red-color, 1);
   color: $white-color;
   & .pagination__icon {
     fill: $white-color;

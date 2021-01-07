@@ -177,7 +177,28 @@
   font-size: rem(12);
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: rem(5);
+
+  &--download {
+    width: rem(90);
+  }
+
+  &--large {
+    margin: 0 auto;
+    width: rem(120);
+    height: rem(40);
+    font-size: rem(18);
+
+    &:hover {
+      border: 1px solid $red-color;
+      background-color: $tomato-color;
+      font-weight: 600;
+      .button__icon {
+        transform: scale(1.2);
+      }
+    }
+  }
 
   &:hover {
     color: rgba($red-color, 1);

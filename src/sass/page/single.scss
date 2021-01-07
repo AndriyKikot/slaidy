@@ -157,10 +157,10 @@
 }
 
 .single__content {
+  padding-top: rem(30);
   @include for-size(desktop) {
     display: flex;
     justify-content: space-between;
-    padding-top: rem(30);
   }
 }
 
@@ -253,8 +253,6 @@
 .other-presentation__box {
   display: flex;
   border: 1px solid rgba($dark-color, 0.4);
-  // padding-bottom: rem(5);
-  // padding-top: rem(5);
   width: 80%;
   margin: 0 auto rem(10);
 }
@@ -266,7 +264,6 @@
 }
 
 .other-presentation__box:not(:last-of-type) {
-  // padding-top: rem(5);
   border-bottom: 1px solid rgba($dark-color, 0.4);
 }
 

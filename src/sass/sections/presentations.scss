@@ -6,7 +6,7 @@
     flex: 0 0 78%;
   }
   @include for-size(desktop) {
-    flex: 0 0 83%;
+    flex: 0 0 85%;
   }
 }
 
@@ -35,7 +35,7 @@
 }
 
 .presentations__title {
-  color: $tomato-color;
+  color: $red-color;
   margin-bottom: rem(12);
   font-size: rem(20);
   letter-spacing: -1px;
@@ -97,7 +97,7 @@
 }
 
 .presentation__item:hover {
-  box-shadow: 0px 0px 10px 0px rgba($red-color, 1);
+  // box-shadow: 0px 0px 10px 0px rgba($red-color, 1);
   transition: 0.2s;
 }
 
@@ -113,13 +113,12 @@
 }
 
 .presentation__title {
-  color: $red-color;
+  color: $dark-color;
   margin-left: rem(10);
   margin-bottom: rem(15);
 }
 
 .presentation__title:hover {
-  color: $tomato-color;
   text-decoration: underline;
   transition: 0.2s;
 }

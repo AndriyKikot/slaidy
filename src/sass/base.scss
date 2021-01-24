@@ -72,4 +72,7 @@ a:focus {
 .container {
   margin: 0 auto;
   padding: 0 rem(15);
+  @include for-size(desktop) {
+    padding: 0 rem(60);
+  }
 }

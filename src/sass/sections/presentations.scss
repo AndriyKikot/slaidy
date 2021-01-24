@@ -6,7 +6,7 @@
     flex: 0 0 78%;
   }
   @include for-size(desktop) {
-    flex: 0 0 85%;
+    flex: 0 0 86%;
   }
 }
 
@@ -20,7 +20,7 @@
 .presentations__content-item {
   margin-bottom: rem(10);
   @include for-size(tablet) {
-    margin-bottom: rem(50);
+    margin-bottom: rem(25);
   }
 }
 
@@ -82,7 +82,7 @@
   border: 1px solid rgba($dark-color, 0.3);
   margin-bottom: rem(20);
   margin-right: auto;
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 .presentation__item--large {
@@ -103,8 +103,8 @@
 
 .presentation__link-img {
   width: 100%;
-  height: rem(270);
-  margin-bottom: rem(10);
+  height: rem(200);
+  margin-bottom: rem(8);
   object-fit: cover;
   object-position: center;
   @include for-size(desktop-xl) {
@@ -115,7 +115,7 @@
 .presentation__title {
   color: $dark-color;
   margin-left: rem(10);
-  margin-bottom: rem(15);
+  margin-bottom: rem(8);
 }
 
 // .presentation__title:hover {
@@ -127,7 +127,7 @@
   color: rgba($dark-color, 0.6);
   margin-left: rem(12);
   font-size: rem(14);
-  margin-bottom: rem(10);
+  margin-bottom: rem(8);
 }
 
 .overlay {

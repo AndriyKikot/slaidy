@@ -253,6 +253,12 @@
   border: 1px solid rgba($dark-color, 0.4);
   width: 80%;
   margin: 0 auto rem(10);
+  @include for-size(tablet) {
+    width: 100%;
+  }
+  @include for-size(desktop) {
+    width: 90%;
+  }
 }
 
 .other-presentation__box:hover {

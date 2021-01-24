@@ -46,7 +46,8 @@
 .download__text-wrapper {
   margin-bottom: rem(50);
   @include for-size(tablet) {
-    margin-right: rem(50);
+    margin-right: rem(30);
+    margin-bottom: rem(10);
   }
 }
 

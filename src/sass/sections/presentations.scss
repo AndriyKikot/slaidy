@@ -70,7 +70,7 @@
 }
 
 .presentations__text:hover {
-  color: $tomato-color;
+  color: $red-color;
   transition: 0.2s;
   transform: scale(1.1);
 }
@@ -118,10 +118,10 @@
   margin-bottom: rem(15);
 }
 
-.presentation__title:hover {
-  text-decoration: underline;
-  transition: 0.2s;
-}
+// .presentation__title:hover {
+//   text-decoration: underline;
+//   transition: 0.2s;
+// }
 
 .presentation__description {
   color: rgba($dark-color, 0.6);

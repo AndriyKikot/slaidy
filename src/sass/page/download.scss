@@ -44,7 +44,7 @@
 }
 
 .download__text-wrapper {
-  margin-bottom: rem(20);
+  margin-bottom: rem(50);
   @include for-size(tablet) {
     margin-right: rem(50);
   }
@@ -66,6 +66,7 @@
 
 .download__list {
   line-height: 1.5;
+  margin-bottom: rem(20);
 }
 
 .download__list-item {
@@ -81,4 +82,9 @@
 .download__description {
   margin-bottom: rem(10);
   line-height: 1.3;
+}
+
+.download__img {
+  margin: 0 auto;
+  margin-bottom: rem(30);
 }

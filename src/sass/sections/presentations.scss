@@ -184,7 +184,6 @@
   }
 
   &--large {
-    margin: 0 auto;
     width: rem(120);
     height: rem(40);
     font-size: rem(18);
@@ -197,6 +196,14 @@
         transform: scale(1.2);
       }
     }
+  }
+
+  &--right {
+    margin-left: auto;
+  }
+
+  &--center {
+    margin: 0 auto;
   }
 
   &:hover {

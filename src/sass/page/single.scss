@@ -191,14 +191,12 @@
 
 .other-presentation {
   flex: 0 0 38%;
-  border: 1px solid rgba($dark-color, 0.7);
   border-radius: 10px;
   background-color: $white-color;
 }
 
 .single__content-title {
   text-align: center;
-  padding-top: rem(10);
   color: rgba($dark-color, 0.7);
   margin-bottom: rem(20);
 }
@@ -260,7 +258,6 @@
 .other-presentation__box:hover {
   transition: 0.3s;
   transform: scale(1.02);
-  box-shadow: 0px 0px 10px 0px #bd0303;
 }
 
 .other-presentation__box:not(:last-of-type) {

@@ -4,10 +4,11 @@
 }
 
 .slaids__form {
-  box-shadow: 0px 0px 10px 0px rgba($red-color, 1);
+  // box-shadow: 0px 0px 10px 0px rgba($red-color, 1);
   background-color: $white-color;
   border-radius: 10px;
   margin-bottom: rem(40);
+  border: 1px solid rgba($dark-color, 0.6);
   @include for-size(tablet) {
     margin: 0 auto rem(40);
   }
@@ -95,8 +96,8 @@
   color: rgba($dark-color, 0.7);
   border: 1px solid rgba($dark-color, 0.7);
   border-radius: 3px;
-  box-shadow: inset 0 5px 10px rgba($dark-color, 0.1),
-    0 2px 5px rgba($dark-color, 0.5);
+  // box-shadow: inset 0 5px 10px rgba($dark-color, 0.1),
+  //   0 2px 5px rgba($dark-color, 0.5);
 
   @include for-size(tablet) {
     width: rem(30);
@@ -105,12 +106,14 @@
   }
 }
 
-.pagination__link:hover {
-  background-color: rgba($red-color, 1);
+.pagination__link:hover,
+.pagination__link--active {
+  border: 1px solid rgba($red-color, 1);
   transition: 0.2s;
-  color: $white-color;
+  color: $red-color;
+  text-decoration: underline;
   & .pagination__icon {
-    fill: $white-color;
+    fill: $red-color;
     transition: 0.2s;
   }
 }
@@ -122,14 +125,5 @@
   }
   @include for-size(desktop) {
     width: 19.5%;
-  }
-}
-
-.pagination__link--active {
-  background-color: rgba($red-color, 1);
-  color: $white-color;
-  & .pagination__icon {
-    fill: $white-color;
-    transition: 0.2s;
   }
 }

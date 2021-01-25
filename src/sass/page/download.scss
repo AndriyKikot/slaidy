@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: rem(30);
+    margin-bottom: rem(20);
   }
 }
 
@@ -88,4 +88,7 @@
 .download__img {
   margin: 0 auto;
   margin-bottom: rem(30);
+  @include for-size(desktop) {
+    margin-bottom: rem(50);
+  }
 }

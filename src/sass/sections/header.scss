@@ -14,6 +14,8 @@
   align-items: center;
   padding-top: rem(12);
   padding-bottom: rem(12);
+  padding-left: rem(28);
+  padding-right: rem(28);
 }
 
 .nav__btn-svg {
@@ -131,7 +133,7 @@
   top: 50%;
   left: -150%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 95%;
   height: rem(45);
 }
 

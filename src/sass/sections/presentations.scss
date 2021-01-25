@@ -77,16 +77,16 @@
 
 .presentation__item {
   background: $white-color;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  // border-bottom-left-radius: 10px;
+  // border-bottom-right-radius: 10px;
   border: 1px solid rgba($dark-color, 0.3);
   margin-bottom: rem(20);
   margin-right: auto;
-  // margin-left: auto;
+  margin-left: auto;
 }
 
 .presentation__item--large {
-  width: rem(400);
+  width: rem(300);
   @include for-size(tablet) {
     width: 48%;
     margin-right: 0;

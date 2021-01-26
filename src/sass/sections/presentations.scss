@@ -41,7 +41,7 @@
   letter-spacing: -1px;
   text-align: center;
   @include for-size(tablet) {
-    margin-right: rem(80);
+    margin-right: rem(60);
     padding-left: rem(15);
     margin-bottom: rem(0);
     text-align: left;
@@ -104,7 +104,7 @@
 .presentation__link-img {
   width: 100%;
   height: rem(200);
-  margin-bottom: rem(8);
+  margin-bottom: rem(6);
   object-fit: cover;
   object-position: center;
   @include for-size(desktop-xl) {
@@ -115,7 +115,7 @@
 .presentation__title {
   color: $dark-color;
   margin-left: rem(10);
-  margin-bottom: rem(8);
+  margin-bottom: rem(6);
 }
 
 // .presentation__title:hover {
@@ -126,8 +126,8 @@
 .presentation__description {
   color: rgba($dark-color, 0.6);
   margin-left: rem(12);
-  font-size: rem(14);
-  margin-bottom: rem(8);
+  font-size: rem(12);
+  margin-bottom: rem(6);
 }
 
 .overlay {
@@ -248,7 +248,7 @@
   width: 100%;
   left: -150%;
   top: rem(45);
-  padding-top: rem(22);
+  padding-top: rem(16);
   text-align: center;
 }
 

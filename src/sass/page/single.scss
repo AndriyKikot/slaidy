@@ -170,23 +170,32 @@
 
 .single__content {
   padding-top: rem(30);
+  margin: 0 auto;
+
+  @include for-size(tablet) {
+    width: 70%;
+  }
   @include for-size(desktop) {
     display: flex;
     justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
 .slide__box {
+  margin-bottom: rem(30);
   @include for-size(tablet) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid rgba($red-color, 0.7);
-    width: 90%;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    width: 98%;
     margin: 0 auto;
-    border-radius: 10px;
-    margin-bottom: rem(30);
   }
+}
+
+.slide__wrapper {
+  margin-bottom: rem(10);
 }
 
 .slaids-description {
@@ -194,7 +203,6 @@
   border: 1px solid rgba($dark-color, 0.7);
   justify-content: center;
   background-color: $white-color;
-  border-radius: 10px;
   margin-bottom: rem(20);
   @include for-size(desktop) {
     margin-bottom: rem(0);
@@ -210,6 +218,7 @@
   text-align: center;
   color: rgba($dark-color, 0.7);
   margin-bottom: rem(20);
+  margin-top: rem(20);
 }
 
 .slide__number {
@@ -229,10 +238,9 @@
   width: 80%;
   margin: 0 auto rem(20);
 
-  @include for-size(tablet) {
-    width: 45%;
-    margin-bottom: rem(0);
-  }
+  // @include for-size(tablet) {
+  //   margin-bottom: rem(0);
+  // }
 }
 
 .slide__description-title {
@@ -243,10 +251,7 @@
 .slide__img {
   margin-bottom: rem(10);
   @include for-size(tablet) {
-    width: 50%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-bottom: rem(0);
+    // width: 50%;
   }
 }
 
@@ -262,7 +267,7 @@
 .other-presentation__box {
   display: flex;
   border: 1px solid rgba($dark-color, 0.4);
-  width: 80%;
+  width: 85%;
   margin: 0 auto rem(10);
   @include for-size(tablet) {
     width: 100%;
@@ -282,7 +287,7 @@
 }
 
 .other-presentation__description-box {
-  width: 40%;
+  width: 50%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -317,28 +322,46 @@
 }
 
 .single__wrapper-content {
-  width: 70%;
   display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  @include for-size(tablet) {
+    width: 70%;
+  }
 }
 
 .banner {
   display: none;
-  @include for-size(desktop) {
+  @include for-size(tablet) {
     display: inline-block;
-    height: 600px;
     border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 30px;
   }
 }
 
 .banner-left {
-  width: 160px;
+  display: none;
+  @include for-size(desktop) {
+    display: inline-block;
+    width: 160px;
+    height: 600px;
+  }
 }
 
 .banner-right {
   width: 280px;
+  height: 600px;
+  @include for-size(tablet) {
+    display: inline-block;
+    width: 20%;
+  }
+}
+
+.banner-center {
+  width: 90%;
+  height: 150px;
+  margin: 0 auto rem(20);
 }

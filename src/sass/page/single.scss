@@ -36,7 +36,7 @@
 }
 
 .image-slider__multiplay {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   @include for-size(desktop) {
     width: 90%;
@@ -369,4 +369,43 @@
   width: 90%;
   height: 150px;
   margin: 0 auto rem(20);
+}
+
+.slider {
+  position: relative;
+  padding-left: rem(20);
+  padding-right: rem(20);
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+  margin: -30px 0 0 0;
+  border: none;
+}
+
+.slick-arrow.slick-prev {
+  left: 0;
+  background: url('../images/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+  background: url('../images/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+
+.image-slider__slide {
+  margin: 0 rem(5);
 }

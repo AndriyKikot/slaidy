@@ -18,7 +18,7 @@
   color: rgba($blue-color, 1);
   font-weight: 700;
   background: $white-light-color;
-  padding: rem(10);
+  padding: rem(5) rem(10);
   @include for-size(tablet) {
     justify-content: left;
   }
@@ -39,9 +39,12 @@
 }
 
 .sidebar__description {
-  font-size: rem(17);
-  letter-spacing: -0.5px;
-  color: rgba($dark-color, 0.6);
+  font-size: rem(14);
+  font-weight: 500;
+  // letter-spacing: -0.5px;
+  color: rgb(3, 3, 3);
+  font-family: 'Roboto';
+  line-height: rem(21);
 }
 
 .sidebar__list-item {
@@ -50,17 +53,16 @@
 }
 
 .sidebar__list-link {
+  color: rgba($dark-color, 0.6);
+  font-family: 'Roboto';
   display: block;
-  color: $red-color;
   padding: rem(10) rem(10) rem(10);
   text-decoration: underline;
-  font-weight: 500;
+  font-weight: 400;
   @include for-size(tablet) {
     padding: rem(10) rem(10) rem(10) rem(14);
-    color: rgba($dark-color, 0.6);
     text-decoration: none;
-    font-size: rem(15);
-    letter-spacing: -0.5px;
+    font-size: rem(14);
   }
 }
 
@@ -71,7 +73,7 @@
   opacity: 1;
   padding-left: rem(14);
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .sidebar__list-link:hover::after {

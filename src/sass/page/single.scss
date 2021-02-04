@@ -176,7 +176,7 @@
 
 .slaids-description {
   flex: 0 0 60%;
-  border: 1px solid rgba($dark-color, 0.7);
+  border: 1px solid #aaa;
   justify-content: center;
   background-color: $white-color;
   margin-bottom: rem(20);
@@ -243,15 +243,11 @@
 
 .other-presentation__box {
   display: flex;
-  border: 1px solid rgba($dark-color, 0.4);
-  width: 85%;
+  border: 1px solid #aaa;
+  // width: 85%;
   margin: 0 auto rem(10);
-  @include for-size(tablet) {
-    width: 100%;
-  }
-  @include for-size(desktop) {
-    width: 90%;
-  }
+  max-width: rem(360);
+  max-height: rem(100);
 }
 
 .other-presentation__box:hover {
